@@ -7,3 +7,10 @@
 # You must write an algorithm that runs in linear time 
 # and uses linear extra space.
 
+nums = [3, 6, 9, 1]
+
+maxGap = 0
+nums.sort()
+for i in range(len(nums)-1):
+    maxGap = max(maxGap, (nums[i+1])-nums[i])
+print(maxGap)
